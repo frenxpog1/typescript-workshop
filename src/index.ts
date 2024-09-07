@@ -1,4 +1,7 @@
-import {sqaureNumber} from "./map";
+import {filterLongWords} from './filterLongWords';
+import {getFirstThreeChars} from './getFirstThreeChars';
+import {printFruits} from './printFruits';
+import {sqaureNumber} from './squareNumber';
 
 console.log('Try npm run lint/fix!');
 
@@ -34,6 +37,18 @@ export function doSomeStuff(
 }
 // TODO: more examples
 
-const numbers = [2,4,6,8];
+// foreach
+const fruits = ['apple', 'banana', 'orange', 'grape'];
+printFruits(fruits);
 
+// map
+const numbers = [2, 4, 6, 8];
 console.log(sqaureNumber(numbers));
+
+// filter
+const words = ['apple', 'banana', 'orange', 'grape', 'pineapple'];
+console.log(filterLongWords(words));
+
+// slice
+const str = 'hello world';
+console.log(getFirstThreeChars(str));
